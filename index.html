@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airlines</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/normalize.css">
+
+</head>
+<body>
+    <nav>
+        <img src="../assets/Logo.svg" alt="Brand Logo" class="logo">
+    </nav>
+    <main>
+        <header>
+            <h1>Airlines</h1>
+        </header>
+        <section>
+            <div class="filter-container">
+                <h5>Filter by Alliances</h5>
+                <div class="input-group">
+                    <input type="checkbox" id="one_world" class="input" name="OW"  onChange="handleChange(event)">
+                    <label for="one_world">One World</label>
+                    <input type="checkbox" id="sky_team" class="input" name="ST" onChange="handleChange(event)">
+                    <label for="one_world">Sky Team</label>
+                    <input type="checkbox" id="star_alliance" class="input" name="SA"  onChange="handleChange(event)">
+                    <label for="one_world">Star Alliance</label>
+                </div>
+            </div>
+        </section>
+        <section id="airlines-container"></section>
+        <div id="load-more-container"></div>
+    </main>
+
+    
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="/javascripts/main.js"></script>
+</body>
+</html>

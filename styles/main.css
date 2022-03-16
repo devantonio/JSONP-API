@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+  
+
+body {
+    font-family: 'Arimo', sans-serif;
+}
+
+nav {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 19px 16px;
+    border-bottom: 1px solid #E6EBF0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+main {
+    min-height: calc(100vh - 62px);
+    background-color: #F9FAFB;
+    padding: 0 94px;
+    margin-top: 62px;
+}
+
+header {
+    padding: 67px 0 73px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 44px;
+    font-weight: 900;
+    color: #000000
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+
+}
+
+li {
+    list-style: none;
+}
+
+.airline-name,
+.filter-container h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #192024;
+}
+
+.filter-container h5 {
+    margin: 0;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: normal;
+    color: #192024;
+    margin: 0 24px 0 10px;
+}
+
+input {
+    height: 20px;
+    height: 20px;
+}
+
+#airlines-container {
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.airline-tile {
+    width: 300px;
+    height: 240px;
+    background-color: #ffffff;
+    border: 1px solid #363f45;
+    border-radius: 8px;
+    box-shadow: 0 -1px 4px 0 rgba(25, 32, 36, 0.04), 0 3px 6px 0 rgba(25, 32, 36, 0.16);
+    display: flex;
+    margin: 16px;
+}
+
+.airline-tile:hover .airline-info{
+    height: auto;
+    overflow: auto;
+    opacity: 1;
+}
+.airline-tile:hover {
+    border: 1px solid #000;
+}
+
+.airline-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    word-break: break-word;
+}
+
+.airline-info {
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+
+.airline-details ul li {
+    margin: 5px 0;
+}
+
+.airline-logo {
+    margin-right: 18px;
+}
+
+.airline-logo img {
+    width: 32px;
+    height: 32px;
+}
+
+.airline-alliance,
+.airline-phone {
+    color: #192024;
+    font-size: 14px;
+    font-weight: normal
+}
+
+.airline-site {
+    color: #5a6872;
+    font-size: 14px;
+    font-weight: normal
+}
+
+#load-more-container {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#load-more {
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 7px;
+    background: #353535;
+    color: #fff;
+}
+
+#load-more:hover {
+    background: #000;
+}
